@@ -1,6 +1,18 @@
 .site-header {
   padding: 40px 0;
 
+  @media only screen and (max-width: $tablet-l) {
+    padding: 30px 0;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    padding: 20px 0;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    padding: 10px 0;
+  }
+
   &__container {
     display: flex;
     align-items: center;
@@ -11,7 +23,7 @@
 
       &__opener {
         position: fixed;
-        top: 52px;
+        top: 32px;
         right: 5px;
         background-color: $white;
         display: inline;
@@ -24,9 +36,14 @@
         text-align: left;
         color: $blue;
         display: none;
+        z-index: 15;
 
         @media only screen and (max-width: $tablet) {
           display: inline;
+        }
+
+        @media only screen and (max-width: $mobile) {
+          top: 22px;
         }
       }
 
@@ -60,7 +77,7 @@
           background-color: $dark-blue;
           position: fixed;
           top: -16px;
-          padding: 54px 0 0 40px;
+          padding: 32px 0 0 40px;
           gap: 14px;
           z-index: 100;
           right: -100%;
@@ -70,6 +87,7 @@
         @media only screen and (max-width: $mobile) {
           width: 65%;
           gap: 12px;
+          padding: 22px 0 0 40px;
         }
       }
 
