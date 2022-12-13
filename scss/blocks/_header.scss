@@ -1,0 +1,113 @@
+.site-header {
+  padding: 40px 0;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .sitenav {
+      position: relative;
+
+      &__opener {
+        position: fixed;
+        top: 52px;
+        right: 5px;
+        background-color: $white;
+        display: inline;
+        margin-right: auto;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        text-align: left;
+        color: $blue;
+        display: none;
+
+        @media only screen and (max-width: $tablet) {
+          display: inline;
+        }
+      }
+
+      &__closer {
+        background-color: $white;
+        display: inline;
+        margin-right: auto;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        text-align: left;
+        color: $blue;
+        display: none;
+
+        @media only screen and (max-width: $tablet) {
+          display: inline;
+        }
+      }
+
+      &__list {
+        display: flex;
+        gap: 32px;
+        position: static;
+
+        @media only screen and (max-width: $tablet) {
+          flex-direction: column;
+          height: 100vh;
+          width: 50%;
+          background-color: $dark-blue;
+          position: fixed;
+          top: -16px;
+          padding: 54px 0 0 40px;
+          gap: 14px;
+          z-index: 100;
+          right: -100%;
+          transition: 1s ease-out;
+        }
+
+        @media only screen and (max-width: $mobile) {
+          width: 65%;
+          gap: 12px;
+        }
+      }
+
+      &__link {
+        text-transform: uppercase;
+        position: relative;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 1.2;
+        color: $dark-blue;
+
+        &:hover::after {
+          transform: scale(1);
+          transform-origin: right;
+        }
+
+        @media only screen and (max-width: $tablet) {
+          color: $white;
+        }
+
+        &::after {
+          content: "";
+          display: inline-block;
+          position: absolute;
+          width: 100%;
+          height: 3px;
+          background-color: $black;
+          bottom: -5px;
+          left: 0;
+          transition: 0.4s transform;
+          transform: scale(0);
+          transform-origin: left;
+
+          @media only screen and (max-width: $tablet) {
+            background-color: $blue;
+          }
+        }
+      }
+    }
+  }
+}

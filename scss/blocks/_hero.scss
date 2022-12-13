@@ -1,0 +1,96 @@
+.hero-section {
+  position: relative;
+  display: flex;
+  padding: 40px 0 200px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(152, 195, 232, 0.2) 100%
+  );
+
+  @media only screen and (max-width: $tablet) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  &-content {
+    padding-left: 130px;
+    position: relative;
+    z-index: 3;
+
+    @media only screen and (max-width: $desktop) {
+      padding: 0;
+    }
+
+    @media only screen and (max-width: $tablet) {
+      text-align: center;
+      padding: 0 30px;
+    }
+  }
+
+  &__title {
+    line-height: 1.2;
+    font-size: 64px;
+    font-family: "Galien", serif;
+    color: $dark-blue;
+    margin-bottom: 32px;
+
+    @media only screen and (max-width: $tablet) {
+      font-size: 54px;
+    }
+
+    @media only screen and (max-width: $mobile) {
+      font-size: 40px;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 1.5;
+    opacity: 0.6;
+    max-width: 425px;
+    font-weight: 400;
+    margin-bottom: 70px;
+
+    @media only screen and (max-width: $tablet) {
+      max-width: none;
+      font-size: 15px;
+    }
+  }
+
+  .hero-section-image {
+    background: url("../../images/hero-illustration.png") no-repeat center;
+    width: 687px;
+    height: 579px;
+    position: absolute;
+    right: 24px;
+    background-size: contain;
+    bottom: 55px;
+
+    @media only screen and (max-width: $desktop) {
+      max-width: 567px;
+      width: 100%;
+      height: 100%;
+      max-height: 469px;
+      bottom: 25%;
+    }
+
+    @media only screen and (max-width: $tablet-l) {
+      max-width: 507px;
+      width: 100%;
+      height: 100%;
+      max-height: 409px;
+      bottom: 10%;
+    }
+
+    @media only screen and (max-width: $tablet) {
+      width: 467px;
+      height: 469px;
+      position: relative;
+      max-width: 100%;
+      left: 0;
+    }
+  }
+}

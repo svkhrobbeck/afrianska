@@ -1,0 +1,101 @@
+// Fonts
+@font-face {
+  font-family: "Galien";
+  src: url("../fonts/Galien-Regular.woff2") format("woff2"),
+    url("../fonts/Galien-Regular.woffGilroy-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Regular.woff2") format("woff2"),
+    url("../fonts/Gilroy-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Medium.woff2") format("woff2"),
+    url("../fonts/Gilroy-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Bold.woff2") format("woff2"),
+    url("../fonts/Gilroy-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Semibold.woff2") format("woff2"),
+    url("../fonts/Gilroy-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+// General styles
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  border: none;
+  outline: none;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+// Html styles
+html {
+  scroll-behavior: smooth;
+}
+
+// Body styles
+body {
+  font-family: "Gilroy", sans-serif;
+}
+
+// Container styles
+.container {
+  max-width: $desktop;
+  width: 100%;
+  margin: 0 auto;
+}
+
+// Visually-hidden styles
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+// Button styles
+.button {
+  padding: 15px 48px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 4%;
+  color: $white;
+  background-color: $blue;
+  border-radius: 10px;
+}
