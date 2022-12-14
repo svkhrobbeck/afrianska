@@ -848,24 +848,18 @@ body {
     max-width: none;
   }
 }
-.testimonials-section td {
+.testimonials-section .testimonials-clients {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.testimonials-section .testimonials-clients__text {
+  display: inline-block;
+  padding: 30px;
   color: #ffffff;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 1.2;
-  white-space: nowrap;
-  padding: 5px;
-}
-.testimonials-section td:not(:last-child) {
-  border-right: 1px solid #ffffff;
-}
-@media only screen and (max-width: 768px) {
-  .testimonials-section td {
-    padding: 10px;
-  }
-  .testimonials-section td:not(:last-child) {
-    border-right: none;
-  }
+  font-weight: 600;
+  border: 1px solid #ffffff;
 }
 
 .footer {
