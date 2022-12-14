@@ -1,0 +1,199 @@
+.projects-section {
+  margin-top: 190px;
+
+  @media only screen and (max-width: $tablet-l) {
+    margin-top: 150px;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    margin-top: 110px;
+  }
+
+  &__wrapper {
+    padding: 0 130px;
+
+    @media only screen and (max-width: $desktop) {
+      padding: 0 80px;
+    }
+
+    @media only screen and (max-width: $tablet) {
+      padding: 0 20px;
+    }
+
+    @media only screen and (max-width: $mobile) {
+      padding: 0 10px;
+    }
+  }
+
+  &-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 30px;
+
+    @media only screen and (max-width: $tablet) {
+      text-align: center;
+      flex-direction: column;
+      row-gap: 30px;
+    }
+  }
+
+  &__title {
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: $dark-blue;
+    max-width: 227px;
+
+    @media only screen and (max-width: $tablet) {
+      max-width: none;
+      font-size: 28px;
+    }
+  }
+
+  &__text {
+    max-width: 540px;
+    font-size: 16px;
+    line-height: 1.5;
+    opacity: 0.6;
+    color: $dark-blue;
+    letter-spacing: 5%;
+
+    @media only screen and (max-width: $tablet) {
+      max-width: none;
+    }
+  }
+
+  .project-finisheds {
+    margin-top: 100px;
+
+    @media only screen and (max-width: $tablet) {
+      margin-top: 75px;
+    }
+
+    @media only screen and (max-width: $mobile) {
+      margin-top: 50px;
+    }
+
+    &__content {
+      color: $white;
+      font-weight: 400;
+    }
+    &__heading {
+      font-size: 28px;
+      line-height: 1.5;
+      letter-spacing: 5%;
+      font-weight: 400;
+
+      @media only screen and (max-width: $tablet-l) {
+        font-size: 24px;
+      }
+
+      @media only screen and (max-width: $tablet) {
+        font-size: 22px;
+      }
+
+      @media only screen and (max-width: $mobile) {
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 2;
+
+      @media only screen and (max-width: $tablet) {
+        font-size: 15px;
+      }
+    }
+  }
+
+  .mini-projects__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 96px;
+    gap: 30px;
+
+    @media only screen and (max-width: $tablet) {
+      flex-direction: column;
+      margin-top: 85px;
+    }
+
+    @media only screen and (max-width: $mobile) {
+      margin-top: 45px;
+    }
+  }
+
+  .smart-home {
+    background: url(../images/smart-home-pr.png) no-repeat center;
+    background-size: contain;
+    width: 940px;
+    max-width: 100%;
+    height: 417px;
+    max-height: 100%;
+    position: relative;
+    padding: 48px;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+
+    @media only screen and (max-width: $tablet-l) {
+      background-size: cover;
+      border-radius: 10px;
+      height: 370px;
+      width: 900px;
+      padding: 40px;
+    }
+
+    @media only screen and (max-width: $mobile) {
+      text-align: center;
+      padding: 24px;
+      justify-content: center;
+    }
+  }
+
+  .spark-lite-app {
+    background: url(../images/sparklite-app-pr.png) no-repeat center;
+    background-size: contain;
+    width: 422px;
+    max-width: 100%;
+    height: 417px;
+    padding: 24px 32px;
+
+    @media only screen and (max-width: $tablet-l) {
+      background-size: cover;
+      border-radius: 10px;
+      height: 370px;
+      width: 370px;
+    }
+
+    @media only screen and (max-width: $mobile) {
+      text-align: center;
+      padding: 18px 24px;
+    }
+  }
+
+  .rapetition-app {
+    background: url(../images/car-rapetition-app-pr.png) no-repeat center;
+    background-size: contain;
+    width: 422px;
+    max-width: 100%;
+    height: 417px;
+    padding: 24px 32px;
+
+    @media only screen and (max-width: $tablet-l) {
+      background-size: cover;
+      border-radius: 10px;
+      height: 370px;
+      width: 370px;
+    }
+
+    @media only screen and (max-width: $mobile) {
+      text-align: center;
+      padding: 18px 24px;
+    }
+  }
+}
