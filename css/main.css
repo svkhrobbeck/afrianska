@@ -941,6 +941,10 @@ body {
   margin: 14px;
   display: flex;
   gap: 18px;
+  transition: 0.5s ease;
+}
+.footer .footer-bottom__item ul li:hover {
+  color: #5a98d0;
 }
 @media only screen and (max-width: 1200px) {
   .footer .footer-bottom__item ul li {
@@ -961,6 +965,10 @@ body {
 .footer .footer-bottom__item ul li a {
   font-weight: 400;
   color: #ffffff;
+  transition: 0.5s ease;
+}
+.footer .footer-bottom__item ul li a:hover {
+  color: #5a98d0;
 }
 @media only screen and (max-width: 1200px) {
   .footer .footer-bottom__item ul li a {
