@@ -17,6 +17,7 @@ window.addEventListener("scroll", function () {
   if (this.pageYOffset >= 10) {
     elheader.style.paddingTop = "20px";
     elheader.style.paddingBottom = "20px";
+    elheader.style.transition = "0.5s";
   } else {
     elheader.style.paddingTop = "40px";
     elheader.style.paddingBottom = "40px";
