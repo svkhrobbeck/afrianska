@@ -1,0 +1,77 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: $blue;
+
+  &__wrapper {
+    background-color: $dark-blue;
+    padding: 90px 130px;
+    border-radius: 0 200px 0 0;
+    position: relative;
+    z-index: 2;
+
+    // @media only screen and (max-width: $desktop) {
+    //   border-radius: 300px 0 0 0;
+    // }
+
+    // @media only screen and (max-width: $tablet-l) {
+    //   border-radius: 200px 0 0 0;
+    // }
+
+    // @media only screen and (max-width: $tablet) {
+    //   border-radius: 150px 0 0 0;
+    // }
+  }
+
+  &-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid $blue;
+    padding: 0 0 96px;
+
+    @media only screen and (max-width: $desktop) {
+      flex-direction: column;
+      gap: 30px;
+      align-items: flex-start;
+    }
+
+    @media only screen and (max-width: $tablet) {
+      align-items: center;
+    }
+
+    &__content {
+      max-width: 460px;
+      color: $white;
+
+      @media only screen and (max-width: $tablet) {
+        text-align: center;
+      }
+    }
+
+    &__title {
+      font-size: 36px;
+      line-height: 1.2;
+      letter-spacing: 5%;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 1.5;
+      font-weight: 400;
+      letter-spacing: 5%;
+    }
+  }
+
+  &__right,
+  &__left {
+    width: 34%;
+    background-color: $blue;
+  }
+
+  &__left {
+    background-color: $dark-blue;
+  }
+}
