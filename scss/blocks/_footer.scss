@@ -10,17 +10,24 @@
     position: relative;
     z-index: 2;
 
-    // @media only screen and (max-width: $desktop) {
-    //   border-radius: 300px 0 0 0;
-    // }
+    @media only screen and (max-width: $desktop) {
+      padding: 70px 80px;
+    }
 
-    // @media only screen and (max-width: $tablet-l) {
-    //   border-radius: 200px 0 0 0;
-    // }
+    @media only screen and (max-width: $tablet-l) {
+      border-radius: 0 180px 0 0;
+      padding: 70px 50px;
+    }
 
-    // @media only screen and (max-width: $tablet) {
-    //   border-radius: 150px 0 0 0;
-    // }
+    @media only screen and (max-width: $tablet) {
+      border-radius: 0 120px 0 0;
+      padding: 50px;
+    }
+
+    @media only screen and (max-width: $mobile) {
+      border-radius: 0 90px 0 0;
+      padding: 30px;
+    }
   }
 
   &-top {
@@ -55,6 +62,20 @@
       letter-spacing: 5%;
       font-weight: 600;
       margin-bottom: 30px;
+
+      @media only screen and (max-width: $tablet-l) {
+        font-size: 28px;
+      }
+
+      @media only screen and (max-width: $tablet) {
+        font-size: 24px;
+        margin-bottom: 24px;
+      }
+
+      @media only screen and (max-width: $mobile) {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
     }
 
     &__text {
@@ -62,8 +83,66 @@
       line-height: 1.5;
       font-weight: 400;
       letter-spacing: 5%;
+
+      @media only screen and (max-width: $mobile) {
+        font-size: 14px;
+      }
     }
   }
+
+  // Footer bottom
+  .footer-bottom {
+    margin-top: 85px;
+
+    &__list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @media only screen and (max-width: $desktop) {
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+      }
+
+      @media only screen and (max-width: $tablet-l) {
+        gap: 30px;
+      }
+    }
+
+    &__item {
+      ul li {
+        color: $white;
+        font-weight: 500;
+        margin: 14px;
+        display: flex;
+        gap: 18px;
+
+        @media only screen and (max-width: $desktop) {
+          justify-content: center;
+          text-align: center;
+        }
+
+        @media only screen and (max-width: $tablet-l) {
+          margin: 7px;
+        }
+
+        @media only screen and (max-width: $tablet) {
+          margin: 3px;
+        }
+      }
+      ul li a {
+        font-weight: 400;
+        color: $white;
+
+        @media only screen and (max-width: $desktop) {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  // Others
 
   &__right,
   &__left {

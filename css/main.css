@@ -829,6 +829,29 @@ body {
   position: relative;
   z-index: 2;
 }
+@media only screen and (max-width: 1200px) {
+  .footer__wrapper {
+    padding: 70px 80px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .footer__wrapper {
+    border-radius: 0 180px 0 0;
+    padding: 70px 50px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .footer__wrapper {
+    border-radius: 0 120px 0 0;
+    padding: 50px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .footer__wrapper {
+    border-radius: 0 90px 0 0;
+    padding: 30px;
+  }
+}
 .footer-top {
   display: flex;
   align-items: center;
@@ -864,11 +887,85 @@ body {
   font-weight: 600;
   margin-bottom: 30px;
 }
+@media only screen and (max-width: 992px) {
+  .footer-top__title {
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .footer-top__title {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .footer-top__title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}
 .footer-top__text {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 5%;
+}
+@media only screen and (max-width: 576px) {
+  .footer-top__text {
+    font-size: 14px;
+  }
+}
+.footer .footer-bottom {
+  margin-top: 85px;
+}
+.footer .footer-bottom__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 1200px) {
+  .footer .footer-bottom__list {
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .footer .footer-bottom__list {
+    gap: 30px;
+  }
+}
+.footer .footer-bottom__item ul li {
+  color: #ffffff;
+  font-weight: 500;
+  margin: 14px;
+  display: flex;
+  gap: 18px;
+}
+@media only screen and (max-width: 1200px) {
+  .footer .footer-bottom__item ul li {
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .footer .footer-bottom__item ul li {
+    margin: 7px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .footer .footer-bottom__item ul li {
+    margin: 3px;
+  }
+}
+.footer .footer-bottom__item ul li a {
+  font-weight: 400;
+  color: #ffffff;
+}
+@media only screen and (max-width: 1200px) {
+  .footer .footer-bottom__item ul li a {
+    text-align: center;
+  }
 }
 .footer__right, .footer__left {
   width: 34%;
