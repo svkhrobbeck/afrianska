@@ -108,6 +108,21 @@ body {
   background-color: $blue;
   border-radius: 10px;
   white-space: nowrap;
+  transition: 0.5s ease;
+  border: 1px solid transparent;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    background-color: $dark-blue;
+    border: 1px solid $blue;
+  }
 
   @media only screen and (max-width: $tablet) {
     padding: 12px 38px;

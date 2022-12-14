@@ -1,5 +1,15 @@
 .site-header {
   padding: 40px 0;
+  position: sticky;
+  top: 0;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.8) 0%,
+    rgba(255, 255, 255, 0.8) 0%,
+    rgba(152, 195, 232, 0.8) 100%
+  );
+  z-index: 10;
 
   @media only screen and (max-width: $tablet-l) {
     padding: 30px 5px;
@@ -7,6 +17,8 @@
 
   @media only screen and (max-width: $tablet) {
     padding: 20px 5px 0;
+    position: static;
+    background: transparent;
   }
 
   @media only screen and (max-width: $mobile) {
@@ -18,13 +30,24 @@
     align-items: center;
     justify-content: space-between;
 
+    .logo {
+      &__link {
+        color: $blue;
+        transition: 0.5s ease;
+
+        &:hover {
+          color: $dark-blue;
+        }
+      }
+    }
+
     .sitenav {
       position: relative;
 
       &__opener {
         position: fixed;
         top: 12px;
-        right: 5px;
+        right: 10px;
         background-color: $white;
         display: flex;
         align-items: center;
@@ -42,7 +65,7 @@
         }
 
         @media only screen and (max-width: $mobile) {
-          top: 2px;
+          top: 20px;
         }
       }
 
@@ -53,7 +76,6 @@
         align-items: center;
         justify-content: center;
         padding: 0;
-        border-radius: 5px;
         text-align: left;
         display: none;
         border-radius: 5px;
@@ -95,7 +117,6 @@
         @media only screen and (max-width: $mobile) {
           width: 65%;
           gap: 22px;
-          padding: 22px 0 0 40px;
         }
       }
 

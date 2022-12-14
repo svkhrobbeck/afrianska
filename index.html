@@ -26,13 +26,27 @@
         <div class="logo">
           <h1>
             <a href="./index.html" class="logo__link">
-              <img
-                src="./images/logo.svg"
-                alt="site logo"
+              <svg
                 width="48"
                 height="32"
-                class="logo__img"
-              />
+                viewBox="0 0 48 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="16" cy="16" r="16" fill="currentColor" />
+                <circle
+                  cx="32"
+                  cy="16"
+                  r="15"
+                  fill="white"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <path
+                  d="M39.3 22L34.38 8H30.96L26.06 22H29.04L29.88 19.48H35.46L36.3 22H39.3ZM32.68 11.18L34.6 16.9H30.76L32.68 11.18Z"
+                  fill="currentColor"
+                />
+              </svg>
             </a>
           </h1>
         </div>
@@ -56,16 +70,18 @@
               </svg>
             </button>
             <li class="sitenav__item">
-              <a href="#" class="sitenav__link">Home</a>
+              <a href="#about" class="sitenav__link">about</a>
             </li>
             <li class="sitenav__item">
-              <a href="#" class="sitenav__link">About us</a>
+              <a href="#what-we-do" class="sitenav__link">What we do</a>
             </li>
             <li class="sitenav__item">
-              <a href="#" class="sitenav__link">Services</a>
+              <a href="#project" class="sitenav__link">project</a>
             </li>
             <li class="sitenav__item">
-              <a href="#" class="sitenav__link">Features</a>
+              <a href="#testimonials" class="sitenav__link"
+                >How It Work With Us</a
+              >
             </li>
           </ul>
         </nav>
@@ -76,7 +92,7 @@
     <!-- Main -->
     <main class="main">
       <!-- Hero section -->
-      <section class="hero-section">
+      <section class="hero-section" id="about">
         <div class="container hero-section__wrapper">
           <div class="hero-section-content">
             <h2 class="hero-section__title">
@@ -97,7 +113,7 @@
       <!-- /Hero section -->
 
       <!-- Features section -->
-      <section class="features-section">
+      <section class="features-section" id="what-we-do">
         <div class="container">
           <div class="features-section__wrapper">
             <h2 class="features-section__title">
@@ -223,7 +239,7 @@
       <!-- /Features section -->
 
       <!-- Projects section -->
-      <section class="projects-section">
+      <section class="projects-section" id="project">
         <div class="container">
           <div class="projects-section__wrapper">
             <div class="projects-section-content">
@@ -271,7 +287,7 @@
       <!-- /Projects section -->
 
       <!-- Testimonials section -->
-      <section class="testimonials-section">
+      <section class="testimonials-section" id="testimonials">
         <div class="container">
           <div class="testimonials-section__wrapper">
             <div class="testimonials-section__content">
@@ -363,13 +379,13 @@
             <li class="footer-bottom__item">
               <ul>
                 <li><strong>About US</strong></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#bout">About</a></li>
                 <li></li>
-                <li><a href="#">What We Do</a></li>
+                <li><a href="#what-we-do">What We Do</a></li>
                 <li></li>
-                <li><a href="#">Project</a></li>
+                <li><a href="#project">Project</a></li>
                 <li></li>
-                <li><a href="#">How It Work With Us</a></li>
+                <li><a href="#testimonials">How It Work With Us</a></li>
               </ul>
             </li>
             <li class="footer-bottom__item">
