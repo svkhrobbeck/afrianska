@@ -162,6 +162,7 @@ body {
   align-items: center;
   justify-content: center;
   display: none;
+  border-radius: 5px;
   z-index: 15;
   color: #5a98d0;
 }
@@ -245,6 +246,11 @@ body {
 @media only screen and (max-width: 768px) {
   .site-header__container .sitenav__link {
     color: #ffffff;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .site-header__container .sitenav__link {
+    font-size: 17px;
   }
 }
 .site-header__container .sitenav__link::after {
