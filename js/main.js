@@ -18,7 +18,7 @@ window.addEventListener("scroll", function () {
     elheader.style.paddingTop = "20px";
     elheader.style.paddingBottom = "20px";
   } else {
-    elheader.style.paddingTop = "30px";
-    elheader.style.paddingBottom = "30px";
+    elheader.style.paddingTop = "40px";
+    elheader.style.paddingBottom = "40px";
   }
 });
