@@ -40,7 +40,11 @@
   padding: 0;
   list-style-type: none;
   border: none;
-  outline: none;
+}
+
+*:focus {
+  outline-offset: 3px;
+  outline: 2px dotted #000000;
 }
 
 *::before,
@@ -145,7 +149,7 @@ body {
 }
 .site-header__container .logo__link {
   color: #5a98d0;
-  transition: 0.5s ease;
+  transition: color 0.5s ease;
 }
 .site-header__container .logo__link:hover {
   color: #1f3f68;
@@ -262,7 +266,7 @@ body {
   background-color: #000000;
   bottom: -5px;
   left: 0;
-  transition: 0.4s transform;
+  transition: 0.4s transform ease;
   transform: scale(0);
   transform-origin: left;
 }

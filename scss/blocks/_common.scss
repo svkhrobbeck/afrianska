@@ -52,7 +52,11 @@
   padding: 0;
   list-style-type: none;
   border: none;
-  outline: none;
+}
+
+*:focus {
+  outline-offset: 3px;
+  outline: 2px dotted $black;
 }
 
 *::before,
