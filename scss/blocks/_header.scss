@@ -23,7 +23,7 @@
 
       &__opener {
         position: fixed;
-        top: 32px;
+        top: 12px;
         right: 5px;
         background-color: $white;
         display: flex;
@@ -42,7 +42,7 @@
         }
 
         @media only screen and (max-width: $mobile) {
-          top: 22px;
+          top: 2px;
         }
       }
 
@@ -94,7 +94,7 @@
 
         @media only screen and (max-width: $mobile) {
           width: 65%;
-          gap: 12px;
+          gap: 22px;
           padding: 22px 0 0 40px;
         }
       }

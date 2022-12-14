@@ -1,0 +1,164 @@
+.features-section {
+  &__wrapper {
+    padding: 0 130px;
+    position: relative;
+    margin-top: 192px;
+
+    @media only screen and (max-width: $desktop) {
+      padding: 0 80px;
+    }
+
+    @media only screen and (max-width: $tablet-l) {
+      padding: 0 40px;
+    }
+
+    @media only screen and (max-width: $tablet) {
+      padding: 0 20px;
+    }
+
+    @media only screen and (max-width: $mobile) {
+      padding: 0 10px;
+    }
+  }
+
+  &__title {
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 5%;
+    color: $blue;
+    font-weight: 600;
+    position: absolute;
+
+    @media only screen and (max-width: $desktop) {
+      position: static;
+      margin-bottom: 80px;
+    }
+
+    @media only screen and (max-width: $tablet-l) {
+      font-size: 32px;
+    }
+
+    @media only screen and (max-width: $tablet) {
+      text-align: center;
+      font-size: 28px;
+    }
+
+    @media only screen and (max-width: $mobile) {
+      font-size: 22px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding-left: 80px;
+
+    @media only screen and (max-width: $desktop) {
+      padding: 0;
+    }
+
+    @media only screen and (max-width: $tablet-l) {
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
+
+    @media only screen and (max-width: $tablet) {
+      gap: 30px;
+    }
+  }
+
+  .features-card {
+    max-width: 380px;
+    padding: 48px;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    background-color: $white;
+
+    @media only screen and (max-width: $tablet) {
+      padding: 36px;
+    }
+
+    @media only screen and (max-width: $mobile) {
+      padding: 24px;
+    }
+
+    &-image {
+      width: 100%;
+      text-align: center;
+    }
+
+    &__img {
+      width: 70%;
+      height: auto;
+    }
+
+    &-content {
+      line-height: 1.5;
+      color: $dark-blue;
+      margin-top: 56px;
+
+      @media only screen and (max-width: $tablet) {
+        text-align: center;
+      }
+    }
+
+    &__heading {
+      font-weight: 600;
+      font-size: 20px;
+      margin-bottom: 16px;
+
+      @media only screen and (max-width: $tablet) {
+        font-size: 18px;
+        margin-bottom: 14px;
+      }
+
+      @media only screen and (max-width: $mobile) {
+        font-size: 17px;
+        margin-bottom: 12px;
+      }
+    }
+
+    &__text {
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 32px;
+
+      @media only screen and (max-width: $tablet) {
+        margin-bottom: 16px;
+      }
+
+      @media only screen and (max-width: $mobile) {
+        font-size: 15px;
+        margin-bottom: 10px;
+      }
+    }
+
+    &__link {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      color: $blue;
+      line-height: 2;
+      font-size: 14px;
+
+      @media only screen and (max-width: $tablet) {
+        display: inline-block;
+      }
+
+      svg {
+        @media only screen and (max-width: $tablet) {
+          vertical-align: middle;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
