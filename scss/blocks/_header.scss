@@ -53,6 +53,7 @@
         align-items: center;
         justify-content: center;
         display: none;
+        border-radius: 5px;
         z-index: 15;
         color: $blue;
 
@@ -135,6 +136,10 @@
 
         @media only screen and (max-width: $tablet) {
           color: $white;
+        }
+
+        @media only screen and (max-width: $mobile) {
+          font-size: 17px;
         }
 
         &::after {
