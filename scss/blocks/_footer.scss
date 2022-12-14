@@ -152,6 +152,18 @@
     }
   }
 
+  .copyright {
+    text-align: center;
+    color: $blue;
+    font-size: 20px;
+    margin-top: 30px;
+    transition: 0.3s ease;
+
+    &:hover {
+      color: $white;
+    }
+  }
+
   // Others
 
   &__right,
