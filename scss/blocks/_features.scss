@@ -148,6 +148,11 @@
       color: $blue;
       line-height: 2;
       font-size: 14px;
+      transition: 0.5s ease;
+
+      &:hover {
+        color: $dark-blue;
+      }
 
       @media only screen and (max-width: $tablet) {
         display: inline-block;
