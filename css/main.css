@@ -861,6 +861,16 @@ body {
   font-weight: 600;
   border: 1px solid #ffffff;
 }
+@media only screen and (max-width: 768px) {
+  .testimonials-section .testimonials-clients__text {
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .testimonials-section .testimonials-clients__text {
+    padding: 10px;
+  }
+}
 
 .footer {
   display: flex;
