@@ -33,7 +33,7 @@
     .logo {
       &__link {
         color: $blue;
-        transition: 0.5s ease;
+        transition: color 0.5s ease;
 
         &:hover {
           color: $dark-blue;
@@ -151,7 +151,7 @@
           background-color: $black;
           bottom: -5px;
           left: 0;
-          transition: 0.4s transform;
+          transition: 0.4s transform ease;
           transform: scale(0);
           transform-origin: left;
 
