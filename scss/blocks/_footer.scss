@@ -117,11 +117,6 @@
         margin: 14px;
         display: flex;
         gap: 18px;
-        transition: color 0.5s ease;
-
-        &:hover {
-          color: $blue;
-        }
 
         @media only screen and (max-width: $desktop) {
           justify-content: center;
