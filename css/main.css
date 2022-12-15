@@ -91,7 +91,7 @@ body {
   background-color: #5a98d0;
   border-radius: 10px;
   white-space: nowrap;
-  transition: 0.5s ease;
+  transition: border 0.5s ease, background-color 0.4s ease, opacity 0.4s ease;
   border: 1px solid transparent;
 }
 .button:hover {
@@ -266,7 +266,7 @@ body {
   background-color: #000000;
   bottom: -5px;
   left: 0;
-  transition: 0.4s transform ease;
+  transition: transform 0.4s ease;
   transform: scale(0);
   transform-origin: left;
 }
@@ -462,10 +462,11 @@ body {
   box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
   border-radius: 10px;
   background-color: #ffffff;
-  transition: 0.3s ease;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 .features-section .features-card:hover {
-  transform: scale(1.03);
+  transform: scale(1.05);
 }
 @media only screen and (max-width: 768px) {
   .features-section .features-card {
@@ -701,7 +702,8 @@ body {
   display: flex;
   justify-content: flex-end;
   text-align: right;
-  transition: 0.3s ease;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 .projects-section .smart-home:hover {
   transform: scale(1.05);
@@ -729,7 +731,8 @@ body {
   max-width: 100%;
   height: 417px;
   padding: 24px 32px;
-  transition: 0.3s ease;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 .projects-section .spark-lite-app:hover {
   transform: scale(1.05);
@@ -755,7 +758,8 @@ body {
   max-width: 100%;
   height: 417px;
   padding: 24px 32px;
-  transition: 0.3s ease;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 .projects-section .rapetition-app:hover {
   transform: scale(1.05);
@@ -1000,7 +1004,7 @@ body {
   margin: 14px;
   display: flex;
   gap: 18px;
-  transition: 0.5s ease;
+  transition: color 0.5s ease;
 }
 .footer .footer-bottom__item ul li:hover {
   color: #5a98d0;
@@ -1024,7 +1028,7 @@ body {
 .footer .footer-bottom__item ul li a {
   font-weight: 400;
   color: #ffffff;
-  transition: 0.5s ease;
+  transition: color 0.5s ease;
 }
 .footer .footer-bottom__item ul li a:hover {
   color: #5a98d0;
@@ -1039,7 +1043,7 @@ body {
   color: #5a98d0;
   font-size: 20px;
   margin-top: 30px;
-  transition: 0.3s ease;
+  transition: color 0.3s ease;
 }
 .footer .copyright:hover {
   color: #ffffff;
