@@ -864,10 +864,15 @@ body {
 }
 .testimonials-section .testimonials-clients__text {
   display: inline-block;
-  padding: 30px;
+  padding: 40px;
   color: #ffffff;
   font-weight: 600;
   border: 1px solid #ffffff;
+}
+@media only screen and (max-width: 992px) {
+  .testimonials-section .testimonials-clients__text {
+    padding: 30px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .testimonials-section .testimonials-clients__text {
