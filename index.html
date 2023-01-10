@@ -1,425 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Afrianska</title>
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Afrianska</title>
 
-    <!-- Boxicon link -->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="./css/main.css" />
-  </head>
+  <!-- Boxicon link -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
-  <body>
-    <!-- Site header -->
-    <header class="site-header">
-      <div class="container site-header__container">
-        <div class="logo">
-          <h1>
-            <a href="./index.html" class="logo__link">
-              <svg
-                width="48"
-                height="32"
-                viewBox="0 0 48 32"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle cx="16" cy="16" r="16" fill="currentColor" />
-                <circle
-                  cx="32"
-                  cy="16"
-                  r="15"
-                  fill="white"
-                  stroke="currentColor"
-                  stroke-width="2"
-                />
-                <path
-                  d="M39.3 22L34.38 8H30.96L26.06 22H29.04L29.88 19.48H35.46L36.3 22H39.3ZM32.68 11.18L34.6 16.9H30.76L32.68 11.18Z"
-                  fill="currentColor"
-                />
-              </svg>
-            </a>
-          </h1>
-        </div>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
 
-        <nav class="sitenav">
-          <button data-btn-opener class="sitenav__opener">
-            <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+<body>
+  <!-- Site header -->
+  <header class="site-header">
+    <div class="container site-header__container">
+      <div class="logo">
+        <h1>
+          <a href="./index.html" class="logo__link">
+            <svg width="48" height="32" viewBox="0 0 48 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="16" cy="16" r="16" fill="currentColor" />
+              <circle cx="32" cy="16" r="15" fill="white" stroke="currentColor" stroke-width="2" />
               <path
-                fill="currentColor"
-                d="M6 36v-3h36v3Zm0-10.5v-3h36v3ZM6 15v-3h36v3Z"
-              />
+                d="M39.3 22L34.38 8H30.96L26.06 22H29.04L29.88 19.48H35.46L36.3 22H39.3ZM32.68 11.18L34.6 16.9H30.76L32.68 11.18Z"
+                fill="currentColor" />
+            </svg>
+          </a>
+        </h1>
+      </div>
+
+      <nav class="sitenav">
+        <button data-btn-opener class="sitenav__opener">
+          <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+            <path fill="currentColor" d="M6 36v-3h36v3Zm0-10.5v-3h36v3ZM6 15v-3h36v3Z" />
+          </svg>
+        </button>
+        <ul class="sitenav__list">
+          <button data-btn-closer class="sitenav__closer">
+            <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+              <path fill="currentColor"
+                d="m12.45 37.65-2.1-2.1L21.9 24 10.35 12.45l2.1-2.1L24 21.9l11.55-11.55 2.1 2.1L26.1 24l11.55 11.55-2.1 2.1L24 26.1Z" />
             </svg>
           </button>
-          <ul class="sitenav__list">
-            <button data-btn-closer class="sitenav__closer">
-              <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
-                <path
-                  fill="currentColor"
-                  d="m12.45 37.65-2.1-2.1L21.9 24 10.35 12.45l2.1-2.1L24 21.9l11.55-11.55 2.1 2.1L26.1 24l11.55 11.55-2.1 2.1L24 26.1Z"
-                />
-              </svg>
-            </button>
-            <li class="sitenav__item">
-              <a href="#about" class="sitenav__link">about</a>
+          <li class="sitenav__item">
+            <a href="#about" class="sitenav__link">about</a>
+          </li>
+          <li class="sitenav__item">
+            <a href="#what-we-do" class="sitenav__link">What we do</a>
+          </li>
+          <li class="sitenav__item">
+            <a href="#project" class="sitenav__link">project</a>
+          </li>
+          <li class="sitenav__item">
+            <a href="#testimonials" class="sitenav__link">How It Work With Us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- /Site header -->
+
+  <!-- Main -->
+  <main class="main">
+    <!-- Hero section -->
+    <section class="hero-section" id="about">
+      <div class="container hero-section__wrapper">
+        <div class="hero-section-content">
+          <h2 class="hero-section__title">
+            New Automation<br />Tool for Your Home
+          </h2>
+          <p class="hero-section__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus
+            tristique vulputate ultrices ut mauris tellus at. Posuere
+            sollicitudin odio tellus elit.
+          </p>
+          <a href="#" class="hero-section__btn button">See Our Project</a>
+        </div>
+      </div>
+      <div class="hero-section-image">
+        <!-- <img src="./images/hero-illustration.png" alt="" /> -->
+      </div>
+    </section>
+    <!-- /Hero section -->
+
+    <!-- Features section -->
+    <section class="features-section" id="what-we-do">
+      <div class="container">
+        <div class="features-section__wrapper">
+          <h2 class="features-section__title">
+            What we do to help<br />our client grow in<br />digital era,
+          </h2>
+          <ul class="features-section__list">
+            <li class="features-section__item">
+              <div class="features-section__card features-card">
+                <div class="features-card-image">
+                  <img src="./images/userpic-man.png" alt="userpic icon" width="182" height="132"
+                    class="features-card__img" />
+                </div>
+                <div class="features-card-content">
+                  <h3 class="features-card__heading">
+                    Make Your business To Be Better Famous In Internet
+                  </h3>
+                  <p class="features-card__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                  <a href="#" class="features-card__link">Learn more
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 4L10.59 5.41L16.17 11H4V13H16.17L10.59 18.59L12 20L20 12L12 4Z"
+                        fill="currentColor" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
             </li>
-            <li class="sitenav__item">
-              <a href="#what-we-do" class="sitenav__link">What we do</a>
-            </li>
-            <li class="sitenav__item">
-              <a href="#project" class="sitenav__link">project</a>
-            </li>
-            <li class="sitenav__item">
-              <a href="#testimonials" class="sitenav__link"
-                >How It Work With Us</a
-              >
+            <li class="features-section__item">
+              <div class="features-section__card features-card">
+                <div class="features-card-image">
+                  <img src="./images/userpic-boy.png" alt="userpic icon" width="182" height="153"
+                    class="features-card__img" />
+                </div>
+                <div class="features-card-content">
+                  <h3 class="features-card__heading">
+                    Bring Technology To Your Comfrotable Home
+                  </h3>
+                  <p class="features-card__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                  <a href="#" class="features-card__link">Learn more
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 4L10.59 5.41L16.17 11H4V13H16.17L10.59 18.59L12 20L20 12L12 4Z"
+                        fill="currentColor" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="features-section__card features-card">
+                <div class="features-card-image">
+                  <img src="./images/userpic-girl.png" alt="userpic icon" width="156" height="131"
+                    class="features-card__img" />
+                </div>
+                <div class="features-card-content">
+                  <h3 class="features-card__heading">
+                    Build Your Digital Product That Suitable For Your Need
+                  </h3>
+                  <p class="features-card__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                  <a href="#" class="features-card__link">Learn more
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 4L10.59 5.41L16.17 11H4V13H16.17L10.59 18.59L12 20L20 12L12 4Z"
+                        fill="currentColor" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
             </li>
           </ul>
-        </nav>
+        </div>
       </div>
-    </header>
-    <!-- /Site header -->
+    </section>
+    <!-- /Features section -->
 
-    <!-- Main -->
-    <main class="main">
-      <!-- Hero section -->
-      <section class="hero-section" id="about">
-        <div class="container hero-section__wrapper">
-          <div class="hero-section-content">
-            <h2 class="hero-section__title">
-              New Automation<br />Tool for Your Home
-            </h2>
-            <p class="hero-section__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus
-              tristique vulputate ultrices ut mauris tellus at. Posuere
-              sollicitudin odio tellus elit.
-            </p>
-            <a href="#" class="hero-section__btn button">See Our Project</a>
-          </div>
-        </div>
-        <div class="hero-section-image">
-          <!-- <img src="./images/hero-illustration.png" alt="" /> -->
-        </div>
-      </section>
-      <!-- /Hero section -->
-
-      <!-- Features section -->
-      <section class="features-section" id="what-we-do">
-        <div class="container">
-          <div class="features-section__wrapper">
-            <h2 class="features-section__title">
-              What we do to help<br />our client grow in<br />digital era,
-            </h2>
-            <ul class="features-section__list">
-              <li class="features-section__item">
-                <div class="features-section__card features-card">
-                  <div class="features-card-image">
-                    <img
-                      src="./images/userpic-man.png"
-                      alt="userpic icon"
-                      width="182"
-                      height="132"
-                      class="features-card__img"
-                    />
-                  </div>
-                  <div class="features-card-content">
-                    <h3 class="features-card__heading">
-                      Make Your business To Be Better Famous In Internet
-                    </h3>
-                    <p class="features-card__text">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
-                    </p>
-                    <a href="#" class="features-card__link"
-                      >Learn more
-                      <svg
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M12 4L10.59 5.41L16.17 11H4V13H16.17L10.59 18.59L12 20L20 12L12 4Z"
-                          fill="currentColor"
-                        />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </li>
-              <li class="features-section__item">
-                <div class="features-section__card features-card">
-                  <div class="features-card-image">
-                    <img
-                      src="./images/userpic-boy.png"
-                      alt="userpic icon"
-                      width="182"
-                      height="153"
-                      class="features-card__img"
-                    />
-                  </div>
-                  <div class="features-card-content">
-                    <h3 class="features-card__heading">
-                      Bring Technology To Your Comfrotable Home
-                    </h3>
-                    <p class="features-card__text">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
-                    </p>
-                    <a href="#" class="features-card__link"
-                      >Learn more
-                      <svg
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M12 4L10.59 5.41L16.17 11H4V13H16.17L10.59 18.59L12 20L20 12L12 4Z"
-                          fill="currentColor"
-                        />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-                <div class="features-section__card features-card">
-                  <div class="features-card-image">
-                    <img
-                      src="./images/userpic-girl.png"
-                      alt="userpic icon"
-                      width="156"
-                      height="131"
-                      class="features-card__img"
-                    />
-                  </div>
-                  <div class="features-card-content">
-                    <h3 class="features-card__heading">
-                      Build Your Digital Product That Suitable For Your Need
-                    </h3>
-                    <p class="features-card__text">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
-                    </p>
-                    <a href="#" class="features-card__link"
-                      >Learn more
-                      <svg
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M12 4L10.59 5.41L16.17 11H4V13H16.17L10.59 18.59L12 20L20 12L12 4Z"
-                          fill="currentColor"
-                        />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <!-- /Features section -->
-
-      <!-- Projects section -->
-      <section class="projects-section" id="project">
-        <div class="container">
-          <div class="projects-section__wrapper">
-            <div class="projects-section-content">
-              <h2 class="projects-section__title">Our Finished Project</h2>
-              <p class="projects-section__text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam.
-              </p>
-            </div>
-            <div class="projects-section-finisheds project-finisheds">
-              <div class="project-finisheds__wrapper">
-                <div class="smart-home">
-                  <div class="project-finisheds__content">
-                    <h3 class="project-finisheds__heading">
-                      Smart Home Installation
-                    </h3>
-                    <p class="project-finisheds__text">
-                      In Muarakana Housing Estate
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="mini-projects__wrapper">
-                <div class="spark-lite-app">
-                  <div class="project-finisheds__content">
-                    <h3 class="project-finisheds__heading">Sparklite App</h3>
-                    <p class="project-finisheds__text">Marketplace</p>
-                  </div>
-                </div>
-
-                <div class="rapetition-app">
-                  <div class="project-finisheds__content">
-                    <h3 class="project-finisheds__heading">
-                      Car-Rapetition App
-                    </h3>
-                    <p class="project-finisheds__text">Board</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- /Projects section -->
-
-      <!-- Testimonials section -->
-      <section class="testimonials-section" id="testimonials">
-        <div class="container">
-          <div class="testimonials-section__wrapper">
-            <div class="testimonials-section__content">
-              <h2 class="testimonials-section__title">Our Beloved Client</h2>
-              <p class="testimonials-section__text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam.
-              </p>
-            </div>
-            <div class="testimonials-clients">
-              <span class="testimonials-clients__text">LOGO CLIENT 1 </span>
-              <span class="testimonials-clients__text">LOGO CLIENT 2</span>
-              <span class="testimonials-clients__text"> LOGO CLIENT 3</span>
-              <span class="testimonials-clients__text"> LOGO CLIENT 4</span>
-              <span class="testimonials-clients__text"> LOGO CLIENT 5</span>
-              <span class="testimonials-clients__text"> LOGO CLIENT 6</span>
-              <span class="testimonials-clients__text"> LOGO CLIENT 7</span>
-              <span class="testimonials-clients__text"> MOREE CLIENTS</span>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- /Testimonials section-->
-    </main>
-    <!-- /Main -->
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="footer__left"></div>
-      <div class="container footer__wrapper">
-        <div class="footer-top">
-          <div class="footer-top__content">
-            <h2 class="footer-top__title">
-              Intersted to woek<br />with our team?
-            </h2>
-            <p class="footer-top__text">
+    <!-- Projects section -->
+    <section class="projects-section" id="project">
+      <div class="container">
+        <div class="projects-section__wrapper">
+          <div class="projects-section-content">
+            <h2 class="projects-section__title">Our Finished Project</h2>
+            <p class="projects-section__text">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam.
             </p>
           </div>
+          <div class="projects-section-finisheds project-finisheds">
+            <div class="project-finisheds__wrapper">
+              <div class="smart-home">
+                <div class="project-finisheds__content">
+                  <h3 class="project-finisheds__heading">
+                    Smart Home Installation
+                  </h3>
+                  <p class="project-finisheds__text">
+                    In Muarakana Housing Estate
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="mini-projects__wrapper">
+              <div class="spark-lite-app">
+                <div class="project-finisheds__content">
+                  <h3 class="project-finisheds__heading">Sparklite App</h3>
+                  <p class="project-finisheds__text">Marketplace</p>
+                </div>
+              </div>
 
-          <div class="footer-top-btn">
-            <a href="#" class="footer__btn button">Let’s Talk</a>
+              <div class="rapetition-app">
+                <div class="project-finisheds__content">
+                  <h3 class="project-finisheds__heading">
+                    Car-Rapetition App
+                  </h3>
+                  <p class="project-finisheds__text">Board</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="footer-bottom">
-          <ul class="footer-bottom__list">
-            <li class="footer-bottom__item">
-              <ul>
-                <li>
-                  <a class="footer-bottom-logo__link" href="./index.html">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="189"
-                      height="48"
-                      fill="none"
-                    >
-                      <path
-                        fill="currentColor"
-                        d="m82.2 32-7.084-19.6h-3.864L64.14 32h3.5l1.372-3.948h8.344L78.728 32H82.2Zm-9.016-15.82 3.108 8.848h-6.216l3.108-8.848Zm18.386-4.144c-4.144-.252-6.328 1.848-6.328 5.684V18h-2.128v2.912h2.128V32h3.024V20.912h3.304V18h-3.304v-.28c0-2.044 1.092-2.968 3.304-2.772v-2.912ZM96.924 18H93.9v14h3.024v-7.056c0-1.428.42-2.464 1.288-3.08.868-.644 1.876-.924 3.024-.84v-3.276c-2.1 0-3.556.868-4.312 2.604V18Zm9.962-2.66c.784-.784.784-1.96.028-2.716a1.895 1.895 0 0 0-2.744 0c-.756.756-.756 1.932 0 2.716.784.756 1.96.756 2.716 0Zm.168 16.66V18h-3.024v14h3.024Zm15.159-12.012c-1.148-1.568-2.772-2.352-4.9-2.352-1.932 0-3.556.7-4.928 2.128-1.372 1.428-2.044 3.164-2.044 5.236 0 2.044.672 3.808 2.044 5.236 1.372 1.428 2.996 2.128 4.928 2.128 2.128 0 3.752-.784 4.9-2.38V32h3.024V18h-3.024v1.988Zm-7.588 8.232c-.84-.868-1.26-1.932-1.26-3.22 0-1.288.42-2.352 1.26-3.192.84-.868 1.904-1.288 3.164-1.288 1.26 0 2.324.42 3.164 1.288.84.84 1.26 1.904 1.26 3.192 0 1.288-.42 2.352-1.26 3.22-.84.84-1.904 1.26-3.164 1.26-1.26 0-2.324-.42-3.164-1.26Zm22.061-10.584c-1.988 0-3.416.728-4.34 2.156V18h-3.024v14h3.024v-7.504c0-2.716 1.428-4.032 3.556-4.032 1.932 0 3.136 1.148 3.136 3.248V32h3.024v-8.596c0-3.584-2.156-5.768-5.376-5.768Zm11.908 4.228c0-.98.896-1.484 2.044-1.484 1.26 0 2.156.532 2.632 1.596l2.548-1.428c-.98-1.82-2.856-2.912-5.18-2.912-1.456 0-2.688.392-3.668 1.176-.98.784-1.456 1.82-1.456 3.108-.056 2.94 2.772 3.78 4.872 4.312 1.484.364 2.66.896 2.66 1.792 0 1.036-.784 1.568-2.38 1.568-1.596 0-2.632-.672-3.108-2.016l-2.604 1.512c.896 2.044 2.94 3.276 5.712 3.276 1.568 0 2.856-.392 3.892-1.148 1.036-.756 1.568-1.82 1.568-3.164.056-2.996-2.744-3.892-4.9-4.368-1.456-.42-2.632-.896-2.632-1.82Zm16.578 2.996 6.16-6.86h-3.696l-5.432 6.188V12.4h-3.024V32h3.024v-6.468l5.74 6.468h3.612l-6.384-7.14Zm18.945-4.872c-1.148-1.568-2.772-2.352-4.9-2.352-1.932 0-3.556.7-4.928 2.128-1.372 1.428-2.044 3.164-2.044 5.236 0 2.044.672 3.808 2.044 5.236 1.372 1.428 2.996 2.128 4.928 2.128 2.128 0 3.752-.784 4.9-2.38V32h3.024V18h-3.024v1.988Zm-7.588 8.232c-.84-.868-1.26-1.932-1.26-3.22 0-1.288.42-2.352 1.26-3.192.84-.868 1.904-1.288 3.164-1.288 1.26 0 2.324.42 3.164 1.288.84.84 1.26 1.904 1.26 3.192 0 1.288-.42 2.352-1.26 3.22-.84.84-1.904 1.26-3.164 1.26-1.26 0-2.324-.42-3.164-1.26Z"
-                      />
-                      <g clip-path="url(#a)">
-                        <circle cx="16" cy="24" r="16" fill="#98C3E8" />
-                        <circle
-                          cx="32"
-                          cy="24"
-                          r="15"
-                          fill="#fff"
-                          stroke="#316099"
-                          stroke-width="2"
-                        />
-                        <path
-                          fill="#316099"
-                          d="m38.3 31-4.92-14h-3.42l-4.9 14h2.98l.84-2.52h5.58L35.3 31h3Zm-6.62-10.82 1.92 5.72h-3.84l1.92-5.72Z"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="a">
-                          <path fill="#fff" d="M0 48h48V0H0z" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <p>A.</p>
-                  <p>Lorem ipsum dolor sit amet.</p>
-                </li>
-                <li>
-                  <p>T.</p>
-                  <p>+62-812-7313-4321</p>
-                </li>
-                <li>
-                  <p>E.</p>
-                  <p>hello.afrian@gmail.com</p>
-                </li>
-              </ul>
-            </li>
-            <li class="footer-bottom__item">
-              <ul>
-                <li><strong>About US</strong></li>
-                <li><a href="#bout">About</a></li>
-                <li></li>
-                <li><a href="#what-we-do">What We Do</a></li>
-                <li></li>
-                <li><a href="#project">Project</a></li>
-                <li></li>
-                <li><a href="#testimonials">How It Work With Us</a></li>
-              </ul>
-            </li>
-            <li class="footer-bottom__item">
-              <ul>
-                <li><strong>Follow US</strong></li>
-                <li><a href="#">Instagram</a></li>
-                <li></li>
-                <li><a href="#">Facebook</a></li>
-                <li></li>
-                <li><a href="#">LinkedIn</a></li>
-                <li></li>
-                <li><a href="#">Youtube</a></li>
-              </ul>
-            </li>
-          </ul>
-          <p class="copyright">2022 © Afrianska. All rights reserved.</p>
+      </div>
+    </section>
+    <!-- /Projects section -->
+
+    <!-- Testimonials section -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="testimonials-section__wrapper">
+          <div class="testimonials-section__content">
+            <h2 class="testimonials-section__title">Our Beloved Client</h2>
+            <p class="testimonials-section__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam.
+            </p>
+          </div>
+          <div class="testimonials-clients">
+            <span class="testimonials-clients__text">LOGO CLIENT 1 </span>
+            <span class="testimonials-clients__text">LOGO CLIENT 2</span>
+            <span class="testimonials-clients__text"> LOGO CLIENT 3</span>
+            <span class="testimonials-clients__text"> LOGO CLIENT 4</span>
+            <span class="testimonials-clients__text"> LOGO CLIENT 5</span>
+            <span class="testimonials-clients__text"> LOGO CLIENT 6</span>
+            <span class="testimonials-clients__text"> LOGO CLIENT 7</span>
+            <span class="testimonials-clients__text"> MOREE CLIENTS</span>
+          </div>
         </div>
       </div>
-      <div class="footer__right"></div>
-    </footer>
-    <!-- /Footer -->
+    </section>
+    <!-- /Testimonials section-->
+  </main>
+  <!-- /Main -->
 
-    <script src="./js/main.js"></script>
-  </body>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__left"></div>
+    <div class="container footer__wrapper">
+      <div class="footer-top">
+        <div class="footer-top__content">
+          <h2 class="footer-top__title">
+            Intersted to woek<br />with our team?
+          </h2>
+          <p class="footer-top__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam.
+          </p>
+        </div>
+
+        <div class="footer-top-btn">
+          <a href="#" class="footer__btn button">Let’s Talk</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <ul class="footer-bottom__list">
+          <li class="footer-bottom__item">
+            <ul>
+              <li>
+                <a class="footer-bottom-logo__link" href="./index.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="189" height="48" fill="none">
+                    <path fill="currentColor"
+                      d="m82.2 32-7.084-19.6h-3.864L64.14 32h3.5l1.372-3.948h8.344L78.728 32H82.2Zm-9.016-15.82 3.108 8.848h-6.216l3.108-8.848Zm18.386-4.144c-4.144-.252-6.328 1.848-6.328 5.684V18h-2.128v2.912h2.128V32h3.024V20.912h3.304V18h-3.304v-.28c0-2.044 1.092-2.968 3.304-2.772v-2.912ZM96.924 18H93.9v14h3.024v-7.056c0-1.428.42-2.464 1.288-3.08.868-.644 1.876-.924 3.024-.84v-3.276c-2.1 0-3.556.868-4.312 2.604V18Zm9.962-2.66c.784-.784.784-1.96.028-2.716a1.895 1.895 0 0 0-2.744 0c-.756.756-.756 1.932 0 2.716.784.756 1.96.756 2.716 0Zm.168 16.66V18h-3.024v14h3.024Zm15.159-12.012c-1.148-1.568-2.772-2.352-4.9-2.352-1.932 0-3.556.7-4.928 2.128-1.372 1.428-2.044 3.164-2.044 5.236 0 2.044.672 3.808 2.044 5.236 1.372 1.428 2.996 2.128 4.928 2.128 2.128 0 3.752-.784 4.9-2.38V32h3.024V18h-3.024v1.988Zm-7.588 8.232c-.84-.868-1.26-1.932-1.26-3.22 0-1.288.42-2.352 1.26-3.192.84-.868 1.904-1.288 3.164-1.288 1.26 0 2.324.42 3.164 1.288.84.84 1.26 1.904 1.26 3.192 0 1.288-.42 2.352-1.26 3.22-.84.84-1.904 1.26-3.164 1.26-1.26 0-2.324-.42-3.164-1.26Zm22.061-10.584c-1.988 0-3.416.728-4.34 2.156V18h-3.024v14h3.024v-7.504c0-2.716 1.428-4.032 3.556-4.032 1.932 0 3.136 1.148 3.136 3.248V32h3.024v-8.596c0-3.584-2.156-5.768-5.376-5.768Zm11.908 4.228c0-.98.896-1.484 2.044-1.484 1.26 0 2.156.532 2.632 1.596l2.548-1.428c-.98-1.82-2.856-2.912-5.18-2.912-1.456 0-2.688.392-3.668 1.176-.98.784-1.456 1.82-1.456 3.108-.056 2.94 2.772 3.78 4.872 4.312 1.484.364 2.66.896 2.66 1.792 0 1.036-.784 1.568-2.38 1.568-1.596 0-2.632-.672-3.108-2.016l-2.604 1.512c.896 2.044 2.94 3.276 5.712 3.276 1.568 0 2.856-.392 3.892-1.148 1.036-.756 1.568-1.82 1.568-3.164.056-2.996-2.744-3.892-4.9-4.368-1.456-.42-2.632-.896-2.632-1.82Zm16.578 2.996 6.16-6.86h-3.696l-5.432 6.188V12.4h-3.024V32h3.024v-6.468l5.74 6.468h3.612l-6.384-7.14Zm18.945-4.872c-1.148-1.568-2.772-2.352-4.9-2.352-1.932 0-3.556.7-4.928 2.128-1.372 1.428-2.044 3.164-2.044 5.236 0 2.044.672 3.808 2.044 5.236 1.372 1.428 2.996 2.128 4.928 2.128 2.128 0 3.752-.784 4.9-2.38V32h3.024V18h-3.024v1.988Zm-7.588 8.232c-.84-.868-1.26-1.932-1.26-3.22 0-1.288.42-2.352 1.26-3.192.84-.868 1.904-1.288 3.164-1.288 1.26 0 2.324.42 3.164 1.288.84.84 1.26 1.904 1.26 3.192 0 1.288-.42 2.352-1.26 3.22-.84.84-1.904 1.26-3.164 1.26-1.26 0-2.324-.42-3.164-1.26Z" />
+                    <g clip-path="url(#a)">
+                      <circle cx="16" cy="24" r="16" fill="#98C3E8" />
+                      <circle cx="32" cy="24" r="15" fill="#fff" stroke="#316099" stroke-width="2" />
+                      <path fill="#316099"
+                        d="m38.3 31-4.92-14h-3.42l-4.9 14h2.98l.84-2.52h5.58L35.3 31h3Zm-6.62-10.82 1.92 5.72h-3.84l1.92-5.72Z" />
+                    </g>
+                    <defs>
+                      <clipPath id="a">
+                        <path fill="#fff" d="M0 48h48V0H0z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <p>A.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </li>
+              <li>
+                <p>T.</p>
+                <p>+62-812-7313-4321</p>
+              </li>
+              <li>
+                <p>E.</p>
+                <p>hello.afrian@gmail.com</p>
+              </li>
+            </ul>
+          </li>
+          <li class="footer-bottom__item">
+            <ul>
+              <li><strong>About US</strong></li>
+              <li><a href="#bout">About</a></li>
+              <li></li>
+              <li><a href="#what-we-do">What We Do</a></li>
+              <li></li>
+              <li><a href="#project">Project</a></li>
+              <li></li>
+              <li><a href="#testimonials">How It Work With Us</a></li>
+            </ul>
+          </li>
+          <li class="footer-bottom__item">
+            <ul>
+              <li><strong>Follow US</strong></li>
+              <li><a href="#">Instagram</a></li>
+              <li></li>
+              <li><a href="#">Facebook</a></li>
+              <li></li>
+              <li><a href="#">LinkedIn</a></li>
+              <li></li>
+              <li><a href="#">Youtube</a></li>
+            </ul>
+          </li>
+        </ul>
+        <p class="copyright">2022 © Afrianska. All rights reserved.</p>
+      </div>
+    </div>
+    <div class="footer__right"></div>
+  </footer>
+  <!-- /Footer -->
+
+  <script src="./js/main.js"></script>
+</body>
+
 </html>

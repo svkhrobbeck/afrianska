@@ -110,6 +110,8 @@
       line-height: 1.5;
       color: $dark-blue;
       margin-top: 56px;
+      display: flex;
+      flex-direction: column;
 
       @media only screen and (max-width: $tablet) {
         text-align: center;
@@ -148,13 +150,13 @@
     }
 
     &__link {
-      display: flex;
-      align-items: center;
-      gap: 15px;
       color: $blue;
       line-height: 2;
       font-size: 14px;
       transition: 0.5s ease;
+      display: flex;
+      align-items: center;
+      margin-right: auto;
 
       &:hover {
         color: $dark-blue;
@@ -166,9 +168,8 @@
 
       svg {
         @media only screen and (max-width: $tablet) {
-          vertical-align: middle;
-          margin-left: 10px;
         }
+        margin-left: 10px;
       }
     }
   }

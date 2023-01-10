@@ -56,6 +56,10 @@
       }
     }
 
+    .logo__link {
+      display: flex;
+    }
+
     &__title {
       font-size: 36px;
       line-height: 1.2;
@@ -164,6 +168,7 @@
   &__right,
   &__left {
     width: 34%;
+    flex-grow: 1;
     background-color: $blue;
   }
 
