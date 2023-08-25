@@ -124,7 +124,6 @@ body {
 
 .site-header {
   padding: 40px 0;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   background: rgb(255, 255, 255);
